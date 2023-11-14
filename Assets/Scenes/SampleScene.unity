@@ -294,6 +294,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &207701517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207701506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812984e4c16f8a14caa497ff16a75b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 1531960352}
 --- !u!1 &506068739
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +459,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cb13515f7cf42df4fbe84b657b737e22, type: 3}
       insertIndex: -1
       addedObject: {fileID: 207701516}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cb13515f7cf42df4fbe84b657b737e22, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 207701517}
     - targetCorrespondingSourceObject: {fileID: 2230985016763922793, guid: cb13515f7cf42df4fbe84b657b737e22, type: 3}
       insertIndex: -1
       addedObject: {fileID: 776949997}
@@ -900,6 +918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1531960350}
   - component: {fileID: 1531960351}
+  - component: {fileID: 1531960352}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -980,6 +999,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1531960352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531960349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af41d4738ca69ae48b4ab470483306f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1531960351}
 --- !u!1 &1874720804
 GameObject:
   m_ObjectHideFlags: 0
