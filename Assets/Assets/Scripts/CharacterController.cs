@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -42,7 +43,9 @@ public class CharacterController : MonoBehaviour
 
         // Gérer les animations
         float moveMagnitude = new Vector2(horizontal, vertical).magnitude;
-        animator.SetFloat("Speed", moveMagnitude);
+        float moveFinalSpeed = moveSpeed * moveMagnitude;
+        animator.SetFloat("Speed", moveFinalSpeed);
+
 
         // Gérer le saut
         if (isGrounded && Input.GetButtonDown("Jump"))
