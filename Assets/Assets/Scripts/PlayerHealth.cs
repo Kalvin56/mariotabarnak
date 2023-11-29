@@ -24,4 +24,10 @@ public class PlayerHealth : MonoBehaviour
         currentHealth--;
         healthBar.SetHealth(currentHealth);
     }
+
+    public void HealPlayer(int healingAmount)
+    {
+        currentHealth = Mathf.Min(currentHealth + healingAmount, maxHealth);
+        healthBar.SetHealth(currentHealth);
+    }
 }
