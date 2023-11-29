@@ -6,7 +6,6 @@ public class HealingObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print(other);
         if (other.CompareTag("PlayerBody"))
         {
             // Le joueur a marché sur l'objet, déclencher la guérison
