@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void UpdatePlayerHp(){
-        currentHealth--;
+        currentHealth -= 2;
         healthBar.SetHealth(currentHealth);
         if (currentHealth < 1 && !gameEnded)
         {
