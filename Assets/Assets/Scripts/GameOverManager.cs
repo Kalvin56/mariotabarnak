@@ -12,9 +12,9 @@ public class GameOverManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public void StopGame()
+    public void LoadMenu()
     {
         // Quittez l'application (fonctionne uniquement dans le build final)
-        Application.Quit();
+        SceneManager.LoadScene("HomeMenuScene");
     }
 }
