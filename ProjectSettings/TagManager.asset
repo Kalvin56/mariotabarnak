@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerBody
+  - PickUp
   layers:
   - Default
   - TransparentFX
